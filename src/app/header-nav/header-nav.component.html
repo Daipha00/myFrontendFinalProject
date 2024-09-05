@@ -1,0 +1,38 @@
+<mat-toolbar class="mat-elevation-z3">
+   
+    
+    <h1 style="margin-left: 8px; flex: 1;">BIOMETRIC REGISTRATION</h1>
+    <!-- <button mat-icon-button (click)="toggleButton()">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    
+    <span class="spacer"></span> <!-- This spacer pushes the icons to the right -->
+  
+    <button mat-icon-button class="icons">
+      <mat-icon>notifications</mat-icon>
+    </button>
+
+    <button mat-icon-button [matMenuTriggerFor]="accountMenu" class="icons">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    
+    <mat-menu #accountMenu="matMenu">
+      <button mat-menu-item >
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+    
+   
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened [style.width]="'250px'" class="sidenav-shadow">
+      <app-sidenav-details></app-sidenav-details>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  

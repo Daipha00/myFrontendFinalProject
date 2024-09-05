@@ -1,0 +1,47 @@
+
+
+<div class="container mt-3" style="padding-top: 90px;"> <!-- Add padding to ensure content visibility -->
+    <div class="card" style="padding: 90px 80px 90px; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 400px; margin: auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1); position: relative;">
+      
+      <!-- Logo and System Name -->
+      <div style="position: absolute; top: -5px; left: 50%; transform: translateX(-50%); text-align: center;  padding: 10px; border-radius: 50%;">
+        <h1 style="font-size: 35px; margin-top: 0px; color: #333;font-weight: 500;">HIBR</h1>
+        <!-- <img src="../images/zhsf.png" alt="HIBS Logo" style="width: 90px; height: 60px;"> -->
+        
+      </div>
+      
+      <form (ngSubmit)="login()" style="width: 100%; margin-top: 40px;"> <!-- Added margin-top to offset the header -->
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter your username" [(ngModel)]="userName" name="userName" id="userName">
+          <mat-icon matSuffix class="user-icon">account_circle</mat-icon>
+        </mat-form-field>
+  
+        <br>
+  
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" placeholder="Enter your password" [(ngModel)]="userPassword" name="userPassword" id="userPassword">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+  
+        <br>
+  
+        <button type="submit" class="custom-button" style="display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px; border: none; border-radius: 4px; background-color: #007bff; color: #fff; font-size: 16px; cursor: pointer;">
+          <mat-icon style="margin-right: 8px;">login</mat-icon>
+          Login
+        </button>
+  <br>
+  <p style="margin-top: 20px; text-align: center; font-size: 14px; color: #555;">
+    New user? <a routerLink="/register" style="color: #007bff; text-decoration: none;">Sign up</a>
+  </p>
+  
+  </form>
+  </div>
+  </div>
+  
+  
+  
+  

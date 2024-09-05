@@ -1,0 +1,23 @@
+.floating-card {
+    max-width: 500px; /* Set a specific width for the card */
+    margin: 40px auto; /* Center the card horizontally */
+    padding: 20px; /* Add padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
+    border-radius: 8px; /* Rounded corners for the card */
+  }
+  
+  .full-width {
+    width: 100%; /* Ensure form fields are full width within the card */
+    margin-bottom: 16px; /* Space between form fields */
+  }
+  
+  .button-container {
+    display: flex; /* Align buttons horizontally */
+    justify-content: space-between; /* Space out the buttons */
+    margin-top: 16px; /* Add space above the buttons */
+  }
+  
+  button {
+    width: 48%; /* Equal width for both buttons */
+  }
+  

@@ -1,0 +1,12 @@
+.mat-icon.pink-icon {
+    color: pink !important;
+  }
+  
+  .mat-icon.primary-icon {
+    color: blue !important;
+  }
+  
+  .mat-icon.danger-icon {
+    color: red !important;
+  }
+  

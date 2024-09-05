@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Member Details</h1>
+<div mat-dialog-content>
+  <p><strong>Membership ID:</strong> {{data.membershipNo}}</p>
+  <p><strong>Full Name:</strong> {{data.memberName}}</p>
+  <p><strong>Address:</strong> {{data.address}}</p>
+  <p><strong>Gender:</strong> {{data.gender}}</p>
+  <p><strong>Date of Birth:</strong> {{data.dob  | date: 'yyyy-MM-dd'}}</p>
+  <p><strong>Issue Date:</strong> {{data.issueDate  | date: 'yyyy-MM-dd'}}</p>
+  <p><strong>Expiry Date:</strong> {{data.expiryDate  | date: 'yyyy-MM-dd'}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onClose()" color="warn">
+        <mat-icon>close</mat-icon>
+        Close
+      </button>
+</div>

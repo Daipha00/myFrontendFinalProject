@@ -1,0 +1,67 @@
+.sidenav-shadow {
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on the right side */
+    border-radius: 0; /* Ensures no border-radius is applied */
+    overflow: hidden; /* Prevents any content overflow if the shadow creates visual overlap */
+  }
+  
+  .sidenav-header {
+    padding: 16px;
+  }
+  
+  .header-text {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .nav-items {
+    margin-top: 20px;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0; /* Ensures nav items do not have a border-radius */
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #f0f0f0; /* Light background on hover for better UX */
+  }
+  
+  .nav-item i {
+    margin-right: 8px;
+  }
+  
+  .content {
+    padding: 24px;
+  }
+  
+  mat-toolbar {
+    position: relative;
+    z-index: 5;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 64px);
+  }
+  
+  .icons {
+    margin-right: 16px;
+  }
+  
+  mat-menu {
+    padding: 8px 16px;
+  }
+  
+  mat-menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  mat-icon {
+    margin-right: 8px;
+  }
+  
