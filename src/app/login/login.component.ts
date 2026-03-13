@@ -24,11 +24,11 @@ export class LoginComponent implements OnInit{
 
 login() {
   // Regular expression to validate password strength
-  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
-  if (!this.userPassword.match(passwordPattern)) {
-    Swal.fire('Error', 'Password must contain at least 8 characters, including uppercase, lowercase, and a digit.', 'error');
-    return;
-  }
+  // const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  // if (!this.userPassword.match(passwordPattern)) {
+  //   Swal.fire('Error', 'Password must contain at least 8 characters, including uppercase, lowercase, and a digit.', 'error');
+  //   return;
+  // }
 
   if (this.userName && this.userPassword) {
     this.afAuth.signInWithEmailAndPassword(this.userName, this.userPassword)
